@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Monitoring & Report</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+        .section {
+            border: 1px solid #ddd;
+            padding: 20px;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+        }
+        h2 {
+            background-color: #1e90ff;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            font-size: 16px;
+            text-align: center;
+        }
+        .chart {
+            height: 100px;
+            background-color: #e0e0e0;
+            margin-top: 10px;
+        }
+        .stats, .pie-chart, .bars {
+            margin-top: 10px;
+        }
+        .stats div, .pie-chart div, .bars div {
+            margin: 5px 0;
+        }
+        .lead-stats {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+        }
+        .budget-stats, .visitor-stats {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 10px;
+        }
+        .chart-title {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .footer {
+            margin-top: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>DASHBOARD Monitoring & Report</h1>
+    
+    <div class="container">
+        <!-- Sales Monitoring Section -->
+        <div class="section">
+            <h2>Sales Monitoring</h2>
+            <div class="lead-stats">
+                <div>
+                    <p>Lead Conversion Ratio: <strong>15:1</strong></p>
+                    <p>Leads: 1,459</p>
+                    <p>Opportunities: 454</p>
+                    <p>Negotiation: 355</p>
+                    <p>Proposed: 212</p>
+                    <p>Wins: 97</p>
+                </div>
+                <div class="chart">
+                    <!-- Placeholder for chart -->
+                    <p>Converted Leads (Last 28 Days)</p>
+                </div>
+            </div>
+            <div class="stats">
+                <div>Lead-to-Opportunity Ratio: <strong>35%</strong></div>
+                <div>Opportunity-to-Win Ratio: <strong>22%</strong></div>
+            </div>
+        </div>
+
+        <!-- Budget Monitoring Section -->
+        <div class="section">
+            <h2>Budget Monitoring</h2>
+            <div class="budget-stats">
+                <div class="chart">
+                    <p>Tasks Completed: 7/17</p>
+                </div>
+                <div class="pie-chart">
+                    <div>Home Budget: 23,568</div>
+                    <div>Personal Expenses: 8,765</div>
+                    <div>Operational Expenses: 7,134</div>
+                    <div>Life Events: 10,456</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Visitor Monitoring Section -->
+        <div class="section">
+            <h2>Visitor Monitoring</h2>
+            <div class="visitor-stats">
+                <div>Users: 199.9k (Last 28 Days)</div>
+                <div class="chart">
+                    <p>28 Day Trend</p>
+                </div>
+                <div>Daily Rate: <strong>0.98%</strong> Web, <strong>1.15%</strong> App</div>
+                <div>Activity Rate: <strong>50.74%</strong> Web, <strong>55.1%</strong> App</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>Data Updated: [Date]</p>
+    </div>
+
+</body>
+</html>
