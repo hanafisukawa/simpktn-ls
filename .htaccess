@@ -1,0 +1,13 @@
+<IfModule mod_rewrite.c>
+	<FilesMatch "\.(env.production|env.development|composer.json)$">
+		Deny from all 
+	</FilesMatch>
+
+   RewriteEngine On
+   RewriteBase /simpktn-ls/
+   RewriteCond %{REQUEST_FILENAME} !-f
+   RewriteCond %{REQUEST_FILENAME} !-d
+   RewriteCond $1 !^(index\.php|images|robots\.txt|css|docs|js|system)
+   RedirectMatch 404 /\.git
+   RewriteRule ^(.*)$ /simpktn-ls/index.php?/$1 [L]
+</IfModule>
